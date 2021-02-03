@@ -469,25 +469,27 @@ namespace Mobile_Repair_History_System_MRHS.Controllers
             }
         }
         #endregion
-        
-        public ActionResult Add_Governorate()
-        {
-            return View();
-        }
-        [HttpPost]
-        public ActionResult Add_Governorate(Governorate G)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Governorates.Add(G);
-                db.SaveChanges();
-                return RedirectToAction("Dashboard");
-            }
-            else
-            {
-                return View();
-            }
-            
-        }
+
+        #region Add Governorate
+        //public ActionResult Add_Governorate()
+        //{
+        //    return View();
+        //}
+        //[HttpPost]
+        //public ActionResult Add_Governorate(Governorate G)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.Governorates.Add(G);
+        //        db.SaveChanges();
+        //        return RedirectToAction("Dashboard");
+        //    }
+        //    else
+        //    {
+        //        return View();
+        //    }
+
+        //}
+        #endregion
     }
 }

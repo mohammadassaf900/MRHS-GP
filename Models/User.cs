@@ -58,6 +58,7 @@ namespace Mobile_Repair_History_System_MRHS.Models
         public virtual ICollection<Rate> Rates { get; set; }
         public virtual Role Role { get; set; }
         public virtual Store Store { get; set; }
+        [Compare("Password")]
         public string ConfirmPassword { get; internal set; }
     }
 }
