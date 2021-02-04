@@ -198,9 +198,9 @@ namespace Mobile_Repair_History_System_MRHS.Controllers
         {
             var verifyUrl = "/User/" + emailFor + "/" + activationCode;
             var link = Request.Url.AbsoluteUri.Replace(Request.Url.PathAndQuery, verifyUrl);
-            var fromEmail = new MailAddress("mrhsystem2021@gmail.com", "MRHS");
+            var fromEmail = new MailAddress("assafm281@gmail.com", "MRHS");
             var toEmail = new MailAddress(Email);
-            var fromEmailPassword = "123456mrhs654321"; // Replace with actual password
+            var fromEmailPassword = "123456Mo123456"; // Replace with actual password
             string subject = "";
             string body = "";
             if (emailFor == "VerifyAccount")

@@ -532,7 +532,7 @@ namespace Mobile_Repair_History_System_MRHS.Controllers
             try
             {
                 MailMessage mail = new MailMessage();
-                mail.To.Add("mrhsystem2021@gmail.com");
+                mail.To.Add("assafm281@gmail.com");
                 mail.From = new MailAddress(email);
                 mail.Subject = subject;
                 string userMessage = "";
@@ -546,7 +546,7 @@ namespace Mobile_Repair_History_System_MRHS.Controllers
                 {
                     Host = "smtp.gmail.com",
                     Port = 587,
-                    Credentials = new System.Net.NetworkCredential("mrhsystem2021@gmail.com", "123456mrhs654321"),
+                    Credentials = new System.Net.NetworkCredential("assafm281@gmail.com", "123456Mo123456"),
                     EnableSsl = true
                 };
                 smtp.Send(mail);
